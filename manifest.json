@@ -1,0 +1,17 @@
+{
+    "manifest_version": 3,
+    "name": "Help Desk Respota Automatica",
+    "description": "Extension made for TI!",
+    "version": "0.0.1",
+    "content_scripts": [
+        {
+            "matches": ["<all_urls>"],
+            "css": ["style.css"],
+            "js": ["index.js"]
+        }
+    ],
+    "background.service_worker": {
+        "scripts": ["background.js"],
+        "persistent": true
+    }
+}
